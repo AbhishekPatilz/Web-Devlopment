@@ -1,0 +1,75 @@
+/* 
+   Pseudo-CLASS Selectors
+*/
+
+   /* Pseudo-classes (:hover, :focus, :disabled, :first-child, :nth-child) → used to style elements in a particular state.
+
+    Pseudo-elements (::first-letter, ::first-line, ::before, ::after, ::selection) → used to style parts of an element. */
+
+/* :hover → When the user hovers over the link */
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/* :focus → When input is focused (clicked or tabbed) */
+input:focus {
+  border: 2px solid blue;
+  background-color: #e0f7ff;
+}
+
+/* :disabled → Styling disabled input */
+input:disabled {
+  background-color: lightgray;
+  color: darkgray;
+}
+
+/* :first-child → First list item will be green */
+li:first-child {
+  color: green;
+}
+
+/* :last-child → Last list item will be orange */
+li:last-child {
+  color: orange;
+}
+
+/* :nth-child(2) → Second list item will be blue */
+li:nth-child(2) {
+  color: blue;
+}
+
+
+/* 
+   Pseudo-ELEMENT Selectors
+   */
+
+/* ::first-letter → First letter of paragraph is styled */
+.intro::first-letter {
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
+}
+
+/* ::first-line → First line of paragraph is styled */
+.intro::first-line {
+  background-color: yellow;
+} 
+
+/* ::before → Adds text/content before paragraph */
+.intro::before {
+  content: "👉 ";
+  color: purple;
+}
+
+/* ::after → Adds text/content after paragraph */
+.intro::after {
+  content: " ✅";
+  color: green;
+}
+
+/* ::selection → Changes background when user selects text */
+::selection {
+  background: black;
+  color: white;
+}

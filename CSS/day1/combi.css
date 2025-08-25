@@ -1,0 +1,29 @@
+/*Types of Combinator Selector */
+
+/* 1.Descendant Combinator 
+Descendant (A B) {} → Selects all B inside A.*/
+
+ div p{
+    color: blue;
+}
+
+/* 2.Child Combinator 
+A > B) {} Selects only direct children, not grandchildren.*/
+
+.parent>p{
+    color: blueviolet;
+}
+
+/* 3.Adjacent Sibling 
+(A + B) → Selects first B immediately after A.*/
+
+h1+p{
+    color: chartreuse;
+}
+
+/* 4.General Sibling 
+(A ~ B) → Selects all B after A (siblings).*/
+
+h1~p{
+    color: gold;
+}

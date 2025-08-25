@@ -1,0 +1,49 @@
+ Types of Selector
+-Simple
+-Combinator
+-pesudo class
+-pesudo element
+
+ 1.Types Of Simple Selector
+
+ -id #
+-class .
+-element/tagname h1
+-Grouping , ,
+-Universal *
+
+2.Types of Combinator Selector
+
+-Descendant (A B) {} → Selects all B inside A.
+-Child Selector (A > B) {} Selects only direct children, not grandchildren.
+-Adjacent Sibling (A + B) → Selects first B immediately after A.
+-General Sibling (A ~ B) → Selects all B after A (siblings).
+         
+
+
+         1️⃣ Basic Selectors
+
+These select elements directly by their name, class, or ID.
+👉 Example: p, .class, #id
+
+2️⃣ Combinator Selectors
+
+These define the relationship between elements (like parent, child, or sibling).
+👉 Example: div p, div > p, h1 + p
+
+3️⃣ Attribute Selectors
+
+These select elements based on their attributes and attribute values.
+👉 Example: input[type="text"]
+
+4️⃣ Pseudo-class Selectors
+
+These apply styles to elements in a particular state or condition.
+👉 Example: a:hover, input:focus
+
+5️⃣ Pseudo-element Selectors
+
+These style specific parts of an element, not the whole element.
+👉 Example: p::first-letter, ::selection
+
+         

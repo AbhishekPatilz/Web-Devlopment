@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+</head>
+
+<body>
+    <h2 style="color: rgb(47, 128, 222);"><b><i>Payment</i></b></h2>
+<fieldset>
+    <!-- <legend><b><i>Payment</i></b></legend> -->
+    <form action="/HTML/Day6/9success.html" method="post">
+
+        <label>Amount:</label>
+        <input type="text" value="1500" disabled>
+        <br><br>
+
+        <label>Payment Method:</label><br>
+        <input type="radio" name="payment"> Credit / Debit Card
+        <details>
+            <summary>Credit / Debit Card</summary>
+            <h4>Card Payment</h4>
+            <label>Card Number:</label>
+            <input type="text" placeholder="Enter card number"><br><br>
+
+            <label>Expiry Date:</label>
+            <input type="text" name="expiry" placeholder="Enter Expiry"><br><br>
+
+            <label>CVV:</label>
+            <input type="password" name="cvv" maxlength="3" placeholder="XXX"><br><br>
+        </details><br><br>
+
+        <input type="radio" name="payment"> UPI <br>
+        <details>
+            <summary>UPI</summary>
+            <h4>UPI Payment</h4>
+            <label>UPI ID:</label>
+            <input type="text" name="upi_id" placeholder="example@upi"><br><br>
+        </details><br><br>
+
+        <input type="radio" name="payment"> Net Banking <br>
+        <details>
+            <summary>Net Banking</summary>
+       <h4>Net Banking</h4>
+        <label>Select Bank:</label>
+        <select name="bank">
+            <option value="">--Select Bank--</option>
+            <option>State Bank of India</option>
+            <option>HDFC Bank</option>
+            <option>ICICI Bank</option>
+            <option>Axis Bank</option>
+        </select>
+        </details><br><br>
+
+        <a href="/HTML/Day6/4Application.html"><button type="button">Back</button></a>
+       <a href="/HTML/Day6/9success.html"><button type="submit">Pay Now</button></a>
+
+    </form>
+    </fieldset>
+</body>
+
+</html>

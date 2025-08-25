@@ -1,0 +1,19 @@
+.h11{
+    color: pink;
+
+}
+
+.h22{
+    color: blueviolet;
+}
+span{
+    font-style: italic;
+}
+
+#p1,.h11,.h22,span{
+    background-color: cornflowerblue;
+}
+
+*{
+    background-color: gold;
+}
