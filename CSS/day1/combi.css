@@ -27,3 +27,6 @@ h1+p{
 h1~p{
     color: gold;
 }
+h1::selection{
+    color: red;
+}

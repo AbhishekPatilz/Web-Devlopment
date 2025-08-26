@@ -1,0 +1,10 @@
+img{
+    height: 400px;
+    width: 400px;
+    float: right;
+    opacity: 80%;
+    border-style: dotted;
+    border-color: rgb(200, 128, 46);
+    box-shadow: 10px 45px 89px 78px royalblue;
+
+}
