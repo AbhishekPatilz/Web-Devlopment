@@ -32,6 +32,8 @@ section{
      background-position: center;
     background-attachment: fixed;
     background: linear-gradient(red, blue, black);
+    /* background-blend-mode: multiply; it is use for combain more than 2 images */
+            /* background-repeat: no-repeat; it is use for avoid repeatition of imges */
     
 
 }
