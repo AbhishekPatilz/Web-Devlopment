@@ -6,20 +6,52 @@
     <title>Document</title>
     <style>
         img{
+            padding-top:100px ;
             height: auto;
             width: auto;
-            animation: abc 5s ease-out 1s infinite;
+            animation: abc 5s ease-out 2s infinite;
         }
         @keyframes abc{
             0%{
                transform: rotate(45deg);
                border-radius: 10px;
+               opacity: 0%;
+
              }
-            50%{
+            25%{
                 transform: rotate3d(90deg);
                 border-radius: 20px;
+                float: right;
+                transform: scale(1.5);
+                opacity: 25%;
+                border-radius: 25px;
+
+            }
+            50%{
+                transform: rotate3d(135deg);
+                border-radius: 20px;
+                /* float: right; */
+                opacity: 50%;
+                border-radius: 50px;
+            }
+            75%{
+                transform: rotate3d(1180deg);
+                border-radius: 20px;
+                float: right;
+                transform: skew(1.5);
+                opacity: 75%;
+                border-radius: 75px;
+            }
+            100%{
+                transform: rotate3d(360deg);
+                border-radius: 20px;
+                /* float: right; */
+                opacity: 100%;
+                /* align-self: center; */
+                border-radius: 100px;
             }
         }
+        
     </style>
 </head>
 <body>
