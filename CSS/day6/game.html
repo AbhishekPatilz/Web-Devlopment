@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: bisque;
+            padding-top: 10px;
+            position: relative;
+            
+            
+
+        }
+        #box1{
+            height: 70px;
+            width: 300px;
+            background-color: aquamarine;
+            margin: 10px;
+            position: absolute;
+            animation:10s linear 2s infinite alternate none upr;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+        @keyframes upr{
+            from{
+                top: 0;
+                left:0;
+                background-color: brown;
+                
+            }
+            to{
+                top: 0;
+                left: 1200px;
+                background-color: blue;
+            }
+        }
+        #box2{
+            height: 70px;
+            width: 300px;
+            background-color: aqua;
+            position: absolute;
+            animation:10s linear 2s infinite alternate none running lwr;
+            
+        }
+        @keyframes lwr{
+            from{
+                top: 680px;
+                left: 1200px;
+                background-color: brown;
+                
+            }
+            to{
+                top: 680px;
+                left: 0px;
+                background-color: blue;
+            }
+        }
+        #ball{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(1, 10, 10);
+            border-radius: 50%;
+            position: absolute;
+            animation:15s linear infinite alternate none running bal;
+            
+        }
+        @keyframes bal{
+            from{
+                top: 70px;
+                left: 0px;
+                background-color: rgb(197, 212, 35);
+                
+            }
+            to{
+                top: 600px;
+                left: 600px;
+                background-color: rgb(196, 83, 198);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div id="box2"></div>
+        <div id="ball"></div>
+    </div>
+</body>
+</html>
