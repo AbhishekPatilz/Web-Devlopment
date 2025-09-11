@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //for
+        for (let i = 1; i <= 10; i++) {
+            document.writeln("FCo");
+            document.writeln("<br>");
+
+        }
+
+        let a = parseInt(prompt("Enter NO."));
+        let b = 1;
+        document.writeln("<br>");
+        document.writeln("Your Number Table Is Here <br>");
+        while (b <= 10) {
+            document.writeln((a * b));
+            document.writeln("<br>");
+            b++;
+        }
+        document.writeln("<br>");
+        document.writeln("This is Your Star Pattern");
+        for (let x = 1; x < 10; x++) {
+            for (let y = 1; y < x; y++) {
+                document.writeln("*");
+            }
+            document.writeln("<br>");
+        }
+
+        document.writeln("<br>");
+        document.writeln("Using For Loop");
+        document.writeln("<br>");
+        for(let ii=1;ii<=100;ii++){
+            if(ii%2==0){
+                document.writeln(ii);
+            }
+        }
+
+
+        document.writeln("<br>");
+        document.writeln("Fibonacci Series");
+        document.writeln("<br>");
+        let f=0;
+        let s=1;
+        let next;
+        for(let i =1;i<=10;i++){
+            
+            document.writeln(f);
+            let next =f+s;
+            f=s;
+            s=next;
+
+
+        }
+
+    </script>
+</body>
+
+</html>
