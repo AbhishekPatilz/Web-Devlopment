@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <style>
+            *{
+                margin: 20px;
+            }
+            div{
+                height: 800px;
+                width: 50%;
+                background-color: aquamarine;
+                display: flex;
+                flex-direction: column;
+                border-radius: 20px;
+
+            }
+            img{
+                display: none;
+            }
+        </style>
+</head>
+
+<body>
+    <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quaerat!</p>
+    <button id="bh">hide</button><button id="bs">show</button><button id="bt">toggal</button><button id="bslu">slideUp</button><button id="bsld">slideDown</button><button id="bslt">Slidetoggel</button>
+    <img src="https://i.pinimg.com/736x/ac/d1/eb/acd1eb4a295b85329dbaecf2f1fe9671.jpg" alt="" height="300px" width="300px">
+    </div>
+    <script>
+        $(document).ready(() => {
+            $("#bh").click(() => {
+
+                $("p").hide()
+            })
+
+            $("#bs").click(() => {
+
+                $("p").show()
+            })
+
+            $("#bt").click(() => {
+
+                $("p").toggle()
+            })
+
+            $("#bsld").click(()=>{
+                $("img").slideDown()
+            })
+
+            $("#bslu").click(()=>{
+                $("img").slideUp()
+            })
+
+            $("#bslt").click(()=>{
+                $("img").slideToggle()
+            })
+        }
+
+
+        )
+    </script>
+</body>
+
+</html>
